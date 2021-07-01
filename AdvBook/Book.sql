@@ -18,3 +18,4 @@ values('Ranjith','Kumar','Nehuru street','Mumbai','Maharastra','400768','7546637
 ('John','Wick','def Street','Banglore','Karnataka','500066','7645676278','john@gmail.com'),
 ('Martin','Guptill','hij Street','Indore','Punjab','505536','7644564568','martin@gmail.com')
 select * from Address_Book
+update Address_Book set first_name='Raj'where first_name='Ranjith';
