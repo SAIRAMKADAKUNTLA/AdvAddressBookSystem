@@ -26,3 +26,5 @@ select * from Address_Book where city='Banglore' or state='Karnataka';
 select count(city) from Address_Book;
 SELECT count(state) from Address_Book;
 
+select * from Address_Book where city='Banglore' order by first_name asc;
+select * from Address_Book where city='Banglore' order by first_name desc;
