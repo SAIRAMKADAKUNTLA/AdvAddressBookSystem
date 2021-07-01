@@ -22,3 +22,7 @@ update Address_Book set first_name='Raj'where first_name='Ranjith';
 delete from Address_Book where first_name='Raj';
 
 select * from Address_Book where city='Banglore' or state='Karnataka';
+
+select count(city) from Address_Book;
+SELECT count(state) from Address_Book;
+
