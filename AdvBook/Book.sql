@@ -42,3 +42,9 @@ select count(relation) from Address_Book where relation = 'Family';
 select count(relation) from Address_Book where relation = 'Friend';
  select * from Address_Book;
 
+insert into Address_Book
+values('Ranjith','Kumar','Nehuru street','Mumbai','Maharastra','400768','7546637878','ranjith@gmail.com','Friend'),
+('Abhi','shek','Nehuru street','Mumbai','Maharastra','400778','7546635678','abhi@gmail.com','Family')
+
+update Address_Book set relation='Friend',relation='Family' where first_name='Madhu';
+
