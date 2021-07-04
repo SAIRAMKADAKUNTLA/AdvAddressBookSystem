@@ -28,3 +28,9 @@ SELECT count(state) from Address_Book;
 
 select * from Address_Book where city='Banglore' order by first_name asc;
 select * from Address_Book where city='Banglore' order by first_name desc;
+
+alter table Address_Book
+add relation varchar(255);
+update Address_Book set relation='Friend' where first_name='Madhu';
+select * from Address_Book where first_name='Madhu' or relation='Friend'
+
