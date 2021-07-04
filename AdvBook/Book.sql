@@ -32,5 +32,13 @@ select * from Address_Book where city='Banglore' order by first_name desc;
 alter table Address_Book
 add relation varchar(255);
 update Address_Book set relation='Friend' where first_name='Madhu';
-select * from Address_Book where first_name='Madhu' or relation='Friend'
+select * from Address_Book where first_name='Madhu' or relation='Friend';
+
+update Address_Book set relation='Family' where first_name='John';
+update Address_Book set relation='Friend' where first_name='Martin';
+update Address_Book set relation='Family' where first_name='Mohan';
+ 
+select count(relation) from Address_Book where relation = 'Family';
+select count(relation) from Address_Book where relation = 'Friend';
+ select * from Address_Book;
 
